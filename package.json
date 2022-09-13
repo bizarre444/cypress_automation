@@ -1,0 +1,30 @@
+{
+    "name": "cypress_automation",
+    "version": "1.0.0",
+    "description": "cypress test automation framework",
+    "main": "index.js",
+    "scripts": {
+        "cypress:open": "cypress open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bizarre444/cypress_automation.git"
+    },
+    "keywords": [
+        "cypress",
+        "automation"
+    ],
+    "author": "Olya Bizarre",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bizarre444/cypress_automation/issues"
+    },
+    "homepage": "https://github.com/bizarre444/cypress_automation#readme",
+    "devDependencies": {
+        "cypress": "^10.7.0",
+        "mocha": "^10.0.0"
+    },
+    "dependencies": {
+        "chai": "^4.3.6"
+    }
+}
