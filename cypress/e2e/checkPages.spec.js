@@ -1,3 +1,5 @@
+const { navigateTo } = require("../support/page_objects/navigation")
+
 describe('Tests For Pages', () => {
 
     beforeEach(() => {
@@ -15,7 +17,7 @@ describe('Tests For Pages', () => {
 
     it('Parent Page check title', () => {
 
-        cy.contains('Parents').click()
+        navigateTo.navigateToParentPage()
         cy.get('.container')
             .then(title => {
                 const newTitle = title.find('.parents__hero-top-title').text().replace()
@@ -25,7 +27,7 @@ describe('Tests For Pages', () => {
 
     it('Teacher Page check title', () => {
 
-        cy.contains('Educators').click()
+        navigateTo.navigateToTeacherPage()
         cy.get('.container')
             .then(title => {
                 const newTitle = title.find('.teacher-hero-section__title').text().replace()
@@ -35,7 +37,7 @@ describe('Tests For Pages', () => {
 
     it('Learning Resources Page check title', () => {
 
-        cy.contains('Learning Resources').click()
+        navigateTo.navigateToLearningPage()
         cy.get('.learning-resources__main-heading')
             .then(title => {
                 const newTitle = title.find('.learning-resources__main-title').text().replace()
@@ -45,7 +47,7 @@ describe('Tests For Pages', () => {
 
     it('Gift Card Page check title', () => {
 
-        cy.contains('Gift Cards').click()
+        navigateTo.navigateToGiftCardPage()
         cy.get('.container')
             .then(title => {
                 const newTitle = title.find('.gift-page__title').text().replace()
