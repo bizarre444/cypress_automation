@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: '46o48c',
     env: {
         BASE_URL: 'https://www.ka-stage.ml/',
     },

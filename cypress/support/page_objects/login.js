@@ -37,6 +37,12 @@ export class Login {
         cy.wait(2000)
         cy.url().should('contain', '/account-settings/#report')
     }
+
+    checkIsLoggedIn() {
+        cy.get('.header__notification')
+            .find('[data-selector="notification-toggle-btn"]')
+            .should('have.css', 'display', 'block')
+    }
 }
 
 export const loginTo = new Login()
