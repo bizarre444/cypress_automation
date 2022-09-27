@@ -3,7 +3,7 @@ const { navigateTo } = require("../support/page_objects/navigation")
 describe('Tests For Pages', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.ml')
+        cy.visit('https://www.ka-stage.tk')
     })
 
     it('Home Page check title', () => {

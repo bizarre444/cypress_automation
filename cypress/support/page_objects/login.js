@@ -21,7 +21,7 @@ export class Login {
             .parents('.family-login-form')
             .find('[data-selector="login-password-input"]')
             .click()
-            .type(password, { delay: 300 })
+            .type(password, { delay: 100 })
             .parents('.family-login-form')
             .find('button')
             .contains('Log in')

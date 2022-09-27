@@ -3,7 +3,7 @@ import { loginTo } from "../support/page_objects/login"
 describe('Log in tests', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.ml')
+        cy.visit('https://www.ka-stage.tk')
     })
 
     it('Log in with incorrect creds', () => {

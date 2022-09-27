@@ -1,7 +1,7 @@
 export class ChessRegistration {
 
     navigateToChessPage() {
-        cy.visit('https://www.ka-stage.ml/chess-course/')
+        cy.visit('https://www.ka-stage.tk/chess-course/')
     }
 
     chessRegFlow() {
