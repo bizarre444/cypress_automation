@@ -1,3 +1,5 @@
+import { worksheetsSort } from "../support/page_objects/worksheets"
+
 describe('Sorting', () => {
 
     beforeEach(() => {
@@ -6,18 +8,26 @@ describe('Sorting', () => {
 
     it('Choose the grade', () => {
 
-        //cy.get('a.activity-item__link').first().click()
+        worksheetsSort.chooseGrade('Kindergarten')
+        worksheetsSort.clickFirstCard()
+        worksheetsSort.checkGrade('Kindergarten')
 
-        cy.get('.learning-resources__filter-list-item')
-            .contains('Kindergarten')
-            .click()
+    })
 
-        cy.wait(15000)
+    it('Choose the subject', () => {
 
-        cy.get('a.activity-item__link').first().click()
+        worksheetsSort.chooseSubject('Chess')
+        worksheetsSort.clickFirstCard()
+        worksheetsSort.checkSubject('Chess')
 
-        cy.get('a.learning-activity__tags-item')
-            .should('contain', 'Kindergarten')
+    })
+
+    it('Choose grade and subject', () => {
+
+        worksheetsSort.chooseGrade('Grade 1')
+        worksheetsSort.chooseSubject('Writing')
+        worksheetsSort.clickFirstCard()
+        worksheetsSort.checkGradeAndSubject('Grade 1', 'Writing')
 
     })
 })
