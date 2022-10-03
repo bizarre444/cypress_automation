@@ -1,9 +1,11 @@
 import { loginTo } from "../support/page_objects/login"
 
-describe('Log in tests', () => {
+describe('Log in tests', {
+    retries: 3
+}, () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.tk')
+        cy.visit(Cypress.env('staging'))
     })
 
     it('Log in with incorrect creds', () => {

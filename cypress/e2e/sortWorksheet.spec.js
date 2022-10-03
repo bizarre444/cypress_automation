@@ -3,7 +3,7 @@ import { worksheetsSort } from "../support/page_objects/worksheets"
 describe('Sorting', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.tk/free-preschool-kindergarten-worksheets/')
+        cy.visit(Cypress.env('staging') + 'free-preschool-kindergarten-worksheets/')
     })
 
     it('Choose the grade', () => {

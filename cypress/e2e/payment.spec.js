@@ -3,7 +3,7 @@ import { paymentGo } from "../support/page_objects/payment"
 describe('Check payment flow', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.tk/subscription-plans/')
+        cy.visit(Cypress.env('staging') + 'subscription-plans/')
     })
 
     it('First plan with trial', () => {

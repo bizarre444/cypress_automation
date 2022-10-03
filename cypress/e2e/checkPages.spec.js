@@ -4,7 +4,7 @@ const { checkTitle } = require("../support/page_objects/titlesCheck")
 describe('Tests For Pages', () => {
 
     beforeEach(() => {
-        cy.visit('https://www.ka-stage.tk')
+        cy.visit(Cypress.env('staging'))
     })
 
     it('Home Page check title', () => {

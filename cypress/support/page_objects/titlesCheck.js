@@ -2,10 +2,10 @@ export class TitlesCheck {
 
     homePageCheck() {
         cy.get('.home-main-section__heading')
-        .then(title => {
-            const newTitle = title.find('.home-main-section__title').text().replace()
-            expect(newTitle).to.include('Learning Website for Kids Pre-K to 3rd Grade')
-        })
+            .then(title => {
+                const newTitle = title.find('.home-main-section__title').text().replace()
+                expect(newTitle).to.include('Learning Website for Kids Pre-K to 3rd Grade')
+            })
     }
 
     parentPageCheck() {
