@@ -33,6 +33,11 @@ export class Worksheets {
             .should('contain', grade)
             .and('contain', subject)
     }
+
+    checkEmptyText() {
+        cy.get('.learning-resources__empty-text')
+            .should('contain', 'Sorry, no results match your search.')
+    }
 }
 
 export const worksheetsSort = new Worksheets()

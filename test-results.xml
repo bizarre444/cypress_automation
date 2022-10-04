@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="74.3790" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-10-04T05:59:40" tests="0" file="cypress\e2e\sortWorksheet.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Sorting" timestamp="2022-10-04T05:59:40" tests="3" time="74.3790" failures="0">
+    <testcase name="Sorting Choose the grade" time="20.7770" classname="Choose the grade">
+    </testcase>
+    <testcase name="Sorting Choose the subject" time="19.0000" classname="Choose the subject">
+    </testcase>
+    <testcase name="Sorting Choose grade and subject" time="34.6020" classname="Choose grade and subject">
+    </testcase>
+  </testsuite>
+</testsuites>
