@@ -4,14 +4,14 @@ export class Worksheets {
         cy.get('.learning-resources__filter-list-item')
             .contains(grade)
             .click()
-            .wait(15000)
+            .wait(5000)
     }
 
     chooseSubject(subject) {
         cy.get('.learning-resources__filter-list-item-label')
             .contains(subject)
             .click()
-            .wait(15000)
+            .wait(5000)
     }
 
     clickFirstCard() {

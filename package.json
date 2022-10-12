@@ -24,7 +24,7 @@
     },
     "homepage": "https://github.com/bizarre444/cypress_automation#readme",
     "devDependencies": {
-        "cypress": "^10.7.0",
+        "cypress": "^10.9.0",
         "mocha": "^10.0.0"
     },
     "dependencies": {
