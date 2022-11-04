@@ -8,7 +8,7 @@ module.exports = defineConfig({
     },
     retires: 3,
     e2e: {
-        supportFile: false,
+        supportFile: 'cypress/support/e2e.js',
         viewportHeight: 1080,
         viewportWidth: 1900,
         specPattern: 'cypress/e2e/**/*.spec.{js,jsx,ts,tsx}',
