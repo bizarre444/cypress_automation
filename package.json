@@ -7,7 +7,8 @@
         "cypress:open": "cypress open",
         "cypress:production": "npx cypress run --env configFile=production",
         "cypress:staging": "npx cypress run --env configFile=staging",
-        "cypress:run": "npx cypress run"
+        "cypress:run": "npx cypress run",
+        "test": "npx cypress run --spec 'cypress/e2e/login.spec.js'"
     },
     "repository": {
         "type": "git",
